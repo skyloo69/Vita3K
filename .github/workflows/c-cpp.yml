@@ -248,4 +248,4 @@ jobs:
         run: |
           ghr_v0.16.2_linux_amd64/ghr -u skyloo69 -r Vita3K-builds -recreate -n "Build: ${{ env.Build_Variable }}" -b "$(printf "Corresponding commit: [${{ env.Latest_Commit_Message }}](https://github.com/skyloo69/Vita3K/commit/${{ github.sha }}) (${{ env.Commiter_Name }})")" ${{ env.Build_Variable }} artifacts/
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.STORE_TOKEN }}
